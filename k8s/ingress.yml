@@ -2,11 +2,14 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: pgmicroservice-ingress
+  namespace: herifauzan          # change if your namespace is different
   annotations:
     kubernetes.io/ingress.class: nginx
 spec:
+  ingressClassName: nginx
   rules:
-    - http:
+    - host: herifauzan.57.158.184.247.nip.io
+      http:
         paths:
           - path: /
             pathType: Prefix
