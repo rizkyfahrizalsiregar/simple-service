@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: pgmicroservice
-          image: rizkyfahrizalsiregar/pgmicroservice:latest
+          image: rizky18/pgmicroservice:latest
           ports:
             - containerPort: 3000
           env:
